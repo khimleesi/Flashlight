@@ -1,0 +1,307 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A9496E03-C41F-4347-BD9B-A90F95E88739}</ProjectGuid>
+    <RootNamespace>COG</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)Libraries\GLFW\include;$(SolutionDir)Libraries\GLM\glm;$(SolutionDir)Libraries\SDL\include;$(SolutionDir)Libraries\GLEW\include;$(SolutionDir)Libraries\ASSIMP\include;$(SolutionDir)Libraries\FreeType\include;$(SolutionDir)Libraries\FMOD\api\lowlevel\inc;$(SolutionDir)Libraries\FMOD\api\studio\inc;$(SolutionDir)Libraries\VisualLeak\include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Libraries\SDL\lib;$(SolutionDir)Libraries\GLEW\lib;$(SolutionDir)Libraries\ASSIMP\lib\x86;$(SolutionDir)Libraries\FreeType\win32;$(SolutionDir)Libraries\FMOD\api\lowlevel\lib;$(SolutionDir)Libraries\FMOD\api\studio\lib;$(SolutionDir)Libraries\VisualLeak\lib\Win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(SolutionDir)Libraries\SDL\lib;$(SolutionDir)Libraries\GLEW\lib;$(SolutionDir)Libraries\ASSIMP\lib\x86;$(SolutionDir)Libraries\FreeType\win32;$(SolutionDir)Libraries\FMOD\api\lowlevel\lib;$(SolutionDir)Libraries\FMOD\api\studio\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Libraries\GLFW\include;$(SolutionDir)Libraries\GLM\glm;$(SolutionDir)Libraries\SDL\include;$(SolutionDir)Libraries\GLEW\include;$(SolutionDir)Libraries\ASSIMP\include;$(SolutionDir)Libraries\FreeType\include;$(SolutionDir)Libraries\FMOD\api\lowlevel\inc;$(SolutionDir)Libraries\FMOD\api\studio\inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>$(SolutionDir)Libraries\SDL\lib;$(SolutionDir)Libraries\GLEW\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Libraries\GLFW\include;$(SolutionDir)Libraries\GLM\include;$(SolutionDir)Libraries\SDL\include;$(SolutionDir)Libraries\GLEW\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(SolutionDir)Libraries\SDL\lib;$(SolutionDir)Libraries\GLEW\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(SolutionDir)Libraries\GLFW\include;$(SolutionDir)Libraries\GLM\include;$(SolutionDir)Libraries\SDL\include;$(SolutionDir)Libraries\GLEW\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>DEBUG_MODE=1;_CRT_SECURE_NO_WARNINGS;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;SDL2_ttf.lib;opengl32.lib;GlU32.lib;assimp.lib;freetype.lib;fmodL_vc.lib;fmodstudioL_vc.lib;vld.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;SDL2_ttf.lib;opengl32.lib;GlU32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>RELEASE_MODE;_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;SDL2_ttf.lib;opengl32.lib;GlU32.lib;assimp.lib;freetype.lib;fmod_vc.lib;fmodstudio_vc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;glew32.lib;SDL2_image.lib;SDL2_net.lib;SDL2_mixer.lib;SDL2_ttf.lib;opengl32.lib;GlU32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AABounds2D.cpp" />
+    <ClCompile Include="AABounds3D.cpp" />
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="Background.cpp" />
+    <ClCompile Include="BeginState.cpp" />
+    <ClCompile Include="BufferCache.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="CreditsState.cpp" />
+    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="FontCache.cpp" />
+    <ClCompile Include="FrameBuffer.cpp" />
+    <ClCompile Include="Frustum.cpp" />
+    <ClCompile Include="GameComponent.cpp" />
+    <ClCompile Include="GuideState.cpp" />
+    <ClCompile Include="MinimapWidget.cpp" />
+    <ClCompile Include="Inventory.cpp" />
+    <ClCompile Include="InventoryItem.cpp" />
+    <ClCompile Include="MainframeTracker.cpp" />
+    <ClCompile Include="Minimap.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="EndState.cpp" />
+    <ClCompile Include="StoryState.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="RenderBuffer.cpp" />
+    <ClCompile Include="RenderTarget.cpp" />
+    <ClCompile Include="TextShader.cpp" />
+    <ClCompile Include="Interface.cpp" />
+    <ClCompile Include="InterfaceShader.cpp" />
+    <ClCompile Include="Light.cpp" />
+    <ClCompile Include="Material.cpp" />
+    <ClCompile Include="Maths.cpp" />
+    <ClCompile Include="Picker.cpp" />
+    <ClCompile Include="Primitive.cpp" />
+    <ClCompile Include="Quad.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="SkyboxShader.cpp" />
+    <ClCompile Include="Terrain.cpp" />
+    <ClCompile Include="TerrainShader.cpp" />
+    <ClCompile Include="Text.cpp" />
+    <ClCompile Include="EntityShader.cpp" />
+    <ClCompile Include="TextureCache.cpp" />
+    <ClCompile Include="TexturePack.cpp" />
+    <ClCompile Include="Timestep.cpp" />
+    <ClCompile Include="UniformBuffer.cpp" />
+    <ClCompile Include="VertexBuffer.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="FileManager.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameState.cpp" />
+    <ClCompile Include="IndexBuffer.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MenuState.cpp" />
+    <ClCompile Include="Model.cpp" />
+    <ClCompile Include="ObjLoader.cpp" />
+    <ClCompile Include="PlayState.cpp" />
+    <ClCompile Include="ScreenManager.cpp" />
+    <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="Skybox.cpp" />
+    <ClCompile Include="Sprite.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="Tools.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="VertexArray.cpp" />
+    <ClCompile Include="vsGLInfoLib.cpp" />
+    <ClCompile Include="Widget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AABounds2D.h" />
+    <ClInclude Include="AABounds3D.h" />
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="Background.h" />
+    <ClInclude Include="BeginState.h" />
+    <ClInclude Include="BufferCache.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="CreditsState.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="FontCache.h" />
+    <ClInclude Include="FiniteStateMachine.h" />
+    <ClInclude Include="FrameBuffer.h" />
+    <ClInclude Include="Frustum.h" />
+    <ClInclude Include="GameComponent.h" />
+    <ClInclude Include="GuideState.h" />
+    <ClInclude Include="MinimapWidget.h" />
+    <ClInclude Include="Interface.h" />
+    <ClInclude Include="InterfaceShader.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="InventoryItem.h" />
+    <ClInclude Include="Light.h" />
+    <ClInclude Include="MainframeTracker.h" />
+    <ClInclude Include="Material.h" />
+    <ClInclude Include="Maths.h" />
+    <ClInclude Include="Minimap.h" />
+    <ClInclude Include="PerformanceTimer.h" />
+    <ClInclude Include="Picker.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="EndState.h" />
+    <ClInclude Include="StoryState.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Primitive.h" />
+    <ClInclude Include="Quad.h" />
+    <ClInclude Include="RenderBuffer.h" />
+    <ClInclude Include="RenderTarget.h" />
+    <ClInclude Include="ResourceManager.h" />
+    <ClInclude Include="SkyboxShader.h" />
+    <ClInclude Include="stb_image.h" />
+    <ClInclude Include="Terrain.h" />
+    <ClInclude Include="TerrainShader.h" />
+    <ClInclude Include="Text.h" />
+    <ClInclude Include="EntityShader.h" />
+    <ClInclude Include="TextShader.h" />
+    <ClInclude Include="TextureCache.h" />
+    <ClInclude Include="TexturePack.h" />
+    <ClInclude Include="Timestep.h" />
+    <ClInclude Include="UniformBlocks.h" />
+    <ClInclude Include="UniformBuffer.h" />
+    <ClInclude Include="VertexBuffer.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="FileManager.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="IndexBuffer.h" />
+    <ClInclude Include="InputManager.h" />
+    <ClInclude Include="Model.h" />
+    <ClInclude Include="ObjLoader.h" />
+    <ClInclude Include="MenuState.h" />
+    <ClInclude Include="PlayState.h" />
+    <ClInclude Include="ScreenManager.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="Shader.h" />
+    <ClInclude Include="Singleton.h" />
+    <ClInclude Include="Skybox.h" />
+    <ClInclude Include="Sprite.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="Tools.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="VertexArray.h" />
+    <ClInclude Include="vsGLInfoLib.h" />
+    <ClInclude Include="Widget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\entityFragmentShader.frag" />
+    <None Include="Assets\Shaders\entityVertexShader.vert" />
+    <None Include="Assets\Shaders\interfaceFragmentShader.frag" />
+    <None Include="Assets\Shaders\interfaceVertexShader.vert" />
+    <None Include="Assets\Shaders\skyboxFragmentShader.frag" />
+    <None Include="Assets\Shaders\skyboxVertexShader.vert" />
+    <None Include="Assets\Shaders\terrainFragmentShader.frag" />
+    <None Include="Assets\Shaders\terrainVertexShader.vert" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

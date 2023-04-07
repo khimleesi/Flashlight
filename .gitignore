@@ -1,0 +1,15 @@
+#Ignore Directories
+.vs/
+x64/
+libraries/
+COG/x64/
+COG/assets/
+
+#Ignore Extensions
+*.user
+*VC.db
+
+#Ignore Files
+COG/VSGLInfoLib.h
+COG/VSGLInfoLib.cpp
+COG/stb_image.h
